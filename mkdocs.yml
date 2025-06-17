@@ -1,0 +1,87 @@
+site_name: Embedded Practice
+site_author: Vivek
+
+repo_url: https://github.com/vivekthota6/embedded_prac
+repo_name: vivekthota6/embedded_prac
+
+copyright: Copyright &copy; 2025 Vivek
+
+plugins:
+  - meta
+
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tooltips
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  icon:
+    repo: material/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tilde
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
